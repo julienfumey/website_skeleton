@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:900,400);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,100);
+
+body{
+	background-color: #222;
+	color: #FFF;
+	font-family: Lato, sans-serif;
+    width:100%;
+}
+
+hr{
+	width: 60%;
+	border:0;
+	height:2px;
+	//background:#BD2222;
+	background: linear-gradient(right, #222, #BD2222, #222);
+	background: -moz-linear-gradient(right, #222, #BD2222, #222);
+	background: -webkit-linear-gradient(right, #222, #BD2222, #222);
+}
+
+a{
+    color: #DDD;
+    text-decoration: none;
+    border-bottom: 1px dotted #DDD;
+}
+
+h1{
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 900;
+	color:#FFF;
+	text-align: center;
+	font-size: 4em;
+	margin-bottom:10px;
+}
+
+header{
+    width:100%;
+    text-align:center;
+}
+
+header img{
+    border: 3px solid #DDD;
+    padding: 8px;
+    height:250px;
+    width:auto;
+    display: inline-block;
+    margin 0 auto;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#headsommaire{
+    padding-top:100px;
+}
+
+#aboutme{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align:justify;
+}
