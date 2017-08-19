@@ -5,7 +5,7 @@ body{
 	background-color: #222;
 	color: #FFF;
 	font-family: Lato, sans-serif;
-    width:100%;
+    //width:100%;
 	font-size:12px;
 }
 
@@ -30,8 +30,9 @@ h1{
 	font-weight: 900;
 	color:#FFF;
 	text-align: center;
-	font-size: 4em;
+	font-size: 3em;
 	margin-bottom:10px;
+	margin-top:0;
 }
 
 @media only screen and (min-width:980px){
@@ -159,4 +160,26 @@ h1{
 	margin: 0 auto;
 	text-align:justify;
 	line-height: 1.5;
+}
+
+#article{
+	width:60%;
+	font-size:1.3em;
+	margin:0 auto;
+}
+
+#article h3{
+	color:#BD2222;
+	letter-spacing: 0.2em;
+	font-size:1.5em;
+	border-bottom: 1px solid #BD2222;
+}
+
+#article table{
+	border-collapse: collapse;
+	//border:1px solid #FFF;
+}
+
+#article tr{
+	border: 1px solid #FFF;
 }
