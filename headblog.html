@@ -6,8 +6,8 @@
             [(#ENV{meta_titre})]&nbsp;|&nbsp;#NOM_SITE_SPIP
         </title>
 
-        <link rel="stylesheet" href="#CHEMIN{styles.css}">
-        <link rel="icon" type="image/png" href="#CHEMIN{img/favicon.png}" />
+        <link rel="stylesheet" href="#CHEMIN{stylesblog.css}">
+        <link rel="icon" type="image/png" href="#CHEMIN{favicon.png}" />
 
         <script type="text/javascript">
         function openNav() {
@@ -18,8 +18,6 @@
             document.getElementById("navigation").style.width = "0";
         }
         </script>
-
-        <!-- Piwik -->
         <!-- Piwik -->
         <script type="text/javascript">
           var _paq = _paq || [];
@@ -48,13 +46,19 @@
                 <BOUCLE_article(ARTICLES){id_rubrique=1}{par num titre}>
                     [<a href="#URL_ARTICLE" class="liensite">(#TITRE|supprimer_numero)</a>]
                 </BOUCLE_article>
-                <a href="http://orcid.org/0000-0002-6272-5619" class="logolien" target="_blank"><img src="#CHEMIN{img/logo_orcid.png}" alt="ORCid" height="40px" onmouseover="this.src='#CHEMIN{img/logo_orcid_hover.png}';" onmouseout="this.src='#CHEMIN{img/logo_orcid.png}';"/></a>
-                <a href="https://www.researchgate.net/profile/Julien_Fumey" class="logolien" target="_blank"><img src="#CHEMIN{img/logo_researchgate.png}" alt="researchgate" height="40px" onmouseover="this.src='#CHEMIN{img/logo_researchgate_hover.png}';" onmouseout="this.src='#CHEMIN{img/logo_researchgate.png}';"/></a>
-                <a href="https://github.com/julienfumey" class="logolien" target="_blank"><img src="#CHEMIN{img/logo_github.png}" alt="github" height="40px" onmouseover="this.src='#CHEMIN{img/logo_github_hover.png}';" onmouseout="this.src='#CHEMIN{img/logo_github.png}';"/></a>
-                <a href="https://www.linkedin.com/in/julienfumey/" class="logolien" target="_blank"><img src="#CHEMIN{img/logo_linkedin.png}" alt="linkedin" height="40px" onmouseover="this.src='#CHEMIN{img/logo_linkedin_hover.png}';" onmouseout="this.src='#CHEMIN{img/logo_linkedin.png}';"/></a>
-                <a href="https://twitter.com/julienfumey" class="logolien" target="_blank"><img src="#CHEMIN{img/logo_twitter.png}" alt="twitter" height="40px" onmouseover="this.src='#CHEMIN{img/logo_twitter_hover.png}';" onmouseout="this.src='#CHEMIN{img/logo_twitter.png}';"/></a>
+                <BOUCLE_rubrique(RUBRIQUES){par num titre}{titre_mot=onglet}>
+                    [<a href="#URL_RUBRIQUE" class="liensite">(#TITRE|supprimer_numero)</a>]
+                </BOUCLE_rubrique>
+                
+                <a href="http://orcid.org/0000-0002-6272-5619" class="logolien" target="_blank"><img src="#CHEMIN{img/logo_orcid.png}" alt="ORCid" height="30px" onmouseover="this.src='#CHEMIN{img/logo_orcid_hover.png}';" onmouseout="this.src='#CHEMIN{img/logo_orcid.png}';"/></a>
+                <a href="https://www.researchgate.net/profile/Julien_Fumey" class="logolien" target="_blank"><img src="#CHEMIN{img/logo_researchgate.png}" alt="researchgate" height="30px" onmouseover="this.src='#CHEMIN{img/logo_researchgate_hover.png}';" onmouseout="this.src='#CHEMIN{img/logo_researchgate.png}';"/></a>
+                <a href="https://github.com/julienfumey" class="logolien" target="_blank"><img src="#CHEMIN{img/logo_github.png}" alt="github" height="30px" onmouseover="this.src='#CHEMIN{img/logo_github_hover.png}';" onmouseout="this.src='#CHEMIN{img/logo_github.png}';"/></a>
+                <a href="https://www.linkedin.com/in/julienfumey/" class="logolien" target="_blank"><img src="#CHEMIN{img/logo_linkedin.png}" alt="linkedin" height="30px" onmouseover="this.src='#CHEMIN{img/logo_linkedin_hover.png}';" onmouseout="this.src='#CHEMIN{img/logo_linkedin.png}';"/></a>
+                <a href="https://twitter.com/julienfumey" class="logolien" target="_blank"><img src="#CHEMIN{img/logo_twitter.png}" alt="twitter" height="30px" onmouseover="this.src='#CHEMIN{img/logo_twitter_hover.png}';" onmouseout="this.src='#CHEMIN{img/logo_twitter.png}';"/></a>
             </nav>
 
             <span class="nav-button" onclick="openNav()">&#9776;</span>
+
+
         </header>
         <div class="main">

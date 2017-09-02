@@ -2,8 +2,8 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,100);
 
 body{
-	background-color: #222;
-	color: #FFF;
+	background-color: #FFF;
+	color: #000;
 	font-family: Lato, sans-serif;
     //width:100%;
 	font-size:12px;
@@ -58,22 +58,14 @@ h1{
 		font-size:1.5em;
 		color:#FFF;
 		text-decoration: none;
-		font-weight:bold;
+		font-weight:300;
 		padding: 10px 20px;
 	}
 
-	header nav.navigation a img{
-		vertical-align: middle;
-	}
-
-	header nav.navigation a.logolien{
-		padding-right:0;
-	}
-
-	header nav.navigation a.liensite:hover{
+	header nav.navigation a:hover{
 		color: #BD2222;
 		background-color: #FFF;
-		font-weight: bold;
+		font-weight: 400;
 		border-radius:10px;
 	}
 }
